@@ -45,3 +45,15 @@ body {
     font-size: 14px;
   }
 }
+
+.items {
+  .item {
+    .item__info {
+      display: flex;
+      align-items: flex-start;
+      .item__info-col {
+        width: 50%;
+      }
+    }
+  }
+}
