@@ -49,10 +49,30 @@ body {
 .items {
   .item {
     .item__info {
+      padding: 30px 15px;
       display: flex;
       align-items: flex-start;
       .item__info-col {
         width: 50%;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        &:nth-child(2) {
+          align-items: flex-end;
+        }
+      }
+      .item__title {
+        font-size: 42px;
+      }
+      .item__subtitle {
+        font-size: 14px;
+      }
+      .item__total-price {
+        font-size: 34px;
+      }
+      .item__price-price {
+        font-size: 18px;
       }
     }
   }
