@@ -47,7 +47,7 @@ body {
 }
 
 .items {
-  background-color: $grey;
+  background-color: #c6caca;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -55,6 +55,7 @@ body {
     border-top: 5px solid black;
     position: relative;
     .item__info {
+      background-color: #d7dbdb;
       padding: 30px 15px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -87,7 +88,9 @@ body {
 .item__specs {
   border-top: 5px solid black;
   border-bottom: 5px solid black;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 125px);
+  background-color: #d7dbdb;
   .spec {
     padding: 25px;
     display: flex;
@@ -102,10 +105,10 @@ body {
 
 .item__photo {
   position: absolute;
-  width: 40%;
+  width: 30%;
   height: 60%;
   border: 5px solid black;
   right: 15px;
-  bottom: 5px;
+  bottom: 0px;
   object-fit: cover;
 }
